@@ -1,11 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency | service</title>
-</head>
-<body>
-    
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css" />
+    <!--================= font awesome cdn link =================-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!--================= font awesome cdn link =================-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#006747]/10 h-full mx-auto">
+    <header class="bg-white py-2 shadow-sm">
+      <div
+        class="w-11/12 mx-auto flex flex-col md:flex-row justify-between md:items-center">
+        <!--======================= Logo part start =======================-->
+        <div class="logo flex items-center gap-1">
+          <img src="assets/logo.png" alt="" class="w-10 h-10" />
+          <div class="w-10 leading-5">
+            <h3 class="text-[#006747] text-[1.25rem] font-bold">
+              Emergency Service
+            </h3>
+          </div>
+        </div>
+        <!--======================= Logo part End =======================-->
+        <!--======================= Add Feature part Start =======================-->
+        <div class="flex items-center gap-3 mt-3 md:mt-0">
+          <div
+            class="hart flex items-center py-2 px-6 gap-2 rounded-full bg-[#006747]/10">
+            <h3 id="heartCount" class="text-[1.2rem] font-bold">0</h3>
+            <img src="assets/heart.png" alt="" class="w-8" />
+          </div>
+
+          <div
+            class="coin flex items-center py-2 px-6 gap-2 rounded-full bg-[#006747]/10">
+            <h3 class="text-[1.2rem] font-bold">100</h3>
+            <img src="assets/coin.png" alt="" class="w-8" />
+          </div>
+
+          <div
+            class="coin flex items-center py-2 px-6 gap-2 rounded-full bg-[#00A63E] text-white">
+            <h3 class="text-[1.2rem] font-bold">2</h3>
+            <p class="text-[1.2rem] font-bold">Copy</p>
+          </div>
+        </div>
+        <!--======================= Add Feature part End =======================-->
+      </div>
+    </header>
+
+    <main>
+      <div
+        class="banner bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-10 text-white flex flex-col items-center text-center">
+        <img src="assets/logo.png" alt="" class="w-20" />
+        <h1 class="text-[40px] font-semibold py-2">জরুরি সেবা ডিরেক্টরি</h1>
+        <p class="">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </div>
+  <!--========================= Banner part End =========================-->
+      <section
+        class="products w-11/12 mx-auto py-10 grid grid-cols-3 md:grid-cols-12 gap-8">
+        <section class="col-span-9 grid md:grid-cols-3 gap-3">
+            <!--==================== Cart Part Start ====================-->
+          <div class="cart bg-white p-5 shadow-md rounded-xl">
+            <div class="flex justify-between items-center">
+              <div class="bg-[#FFE3E2] p-3 rounded-xl">
+                <img src="assets/emergency.png" alt="" class="w-8" />
+              </div>
+              <i class="fa-solid fa-heart text"></i>
+            </div>
+            <h2 class="text-[22px] font-bold mt-2">জাতীয় জরুরি সেবা</h2>
+            <p class="text-[18px] text-gray-500">National Emergency</p>
+            <h3 class="text-[22px] font-bold mt-1">999</h3>
+            <div class="bg-gray-200 py-1 px-3 rounded-full w-[90px]">
+              <p class="text-[16px] text-gray-500">সার্বজনীন</p>
+            </div>
+            <div class="flex items-center gap-2 mt-2">
+              <button
+                class="border-[2px] border-gray-200 w-[150px] py-1 rounded-xl">
+                <i class="fa-solid fa-copy mr-2"></i>Copy
+              </button>
+              <button class="bg-[#00A63E] w-[150px] py-1 rounded-xl text-white">
+                <i class="fa-solid fa-phone mr-2"></i>Call
+              </button>
+            </div>
+          </div>
+  <!-- cart 1 End -->
+          <div class="cart bg-white p-5 shadow-md rounded-xl">
+            <div class="flex justify-between items-center">
+              <div class="bg-[#DFEFFF] p-1 rounded-xl">
+                <img src="assets/police.png" alt="" class="w-12" />
+              </div>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <h2 class="text-[22px] font-bold mt-2">পুলিশ</h2>
+            <p class="text-[18px] text-gray-500">Police</p>
+            <h3 class="text-[22px] font-bold mt-1">999</h3>
+            <div class="bg-gray-200 py-1 px-3 rounded-full w-[70px]">
+              <p class="text-[16px] text-gray-500">পুলিশ</p>
+            </div>
+            <div class="flex items-center gap-2 mt-2">
+              <button
+                class="border-[2px] border-gray-200 w-[150px] py-1 rounded-xl">
+                <i class="fa-solid fa-copy mr-2"></i>Copy
+              </button>
+              <button class="bg-[#00A63E] w-[150px] py-1 rounded-xl text-white">
+                <i class="fa-solid fa-phone mr-2"></i>Call
+              </button>
+            </div>
+          </div>
+<!-- cart 2 End -->
+          <div class="cart bg-white p-5 shadow-md rounded-xl">
+            <div class="flex justify-between items-center">
+              <div class="bg-[#FFE3E2] p-3 rounded-xl">
+                <img src="assets/fire-service.png" alt="" class="w-8" />
+              </div>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <h2 class="text-[22px] font-bold mt-2">ফায়ার সার্ভিস</h2>
+            <p class="text-[18px] text-gray-500">Fire Service</p>
+            <h3 class="text-[22px] font-bold mt-1">999</h3>
+            <div class="bg-gray-200 py-1 px-3 rounded-full w-[70px]">
+              <p class="text-[16px] text-gray-500 mx-auto">ফায়ার</p>
+            </div>
+            <div class="flex items-center gap-2 mt-2">
+              <button
+                class="border-[2px] border-gray-200 w-[150px] py-1 rounded-xl">
+                <i class="fa-solid fa-copy mr-2"></i>Copy
+              </button>
+              <button class="bg-[#00A63E] w-[150px] py-1 rounded-xl text-white">
+                <i class="fa-solid fa-phone mr-2"></i>Call
+              </button>
+            </div>
+          </div>
+<!-- cart 3 End -->
+          <div class="cart bg-white p-5 shadow-md rounded-xl">
+            <div class="flex justify-between items-center">
+              <div class="bg-[#FFE3E2] p-3 rounded-xl">
+                <img src="assets/emergency.png" alt="" class="w-8" />
+              </div>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <h2 class="text-[22px] font-bold mt-2">অ্যাম্বুলেন্স</h2>
+            <p class="text-[18px] text-gray-500">Ambulance</p>
+            <h3 class="text-[22px] font-bold mt-1">1994-999999</h3>
+            <div class="bg-gray-200 py-1 px-3 rounded-full w-[60px]">
+              <p class="text-[16px] text-gray-500">স্বাস্থ্য</p>
+            </div>
+            <div class="flex items-center gap-2 mt-2">
+              <button
+                class="border-[2px] border-gray-200 w-[150px] py-1 rounded-xl">
+                <i class="fa-solid fa-copy mr-2"></i>Copy
+              </button>
+              <button class="bg-[#00A63E] w-[150px] py-1 rounded-xl text-white">
+                <i class="fa-solid fa-phone mr-2"></i>Call
+              </button>
+            </div>
+          </div>
+<!-- cart 4 End -->
+          <div class="cart bg-white p-5 shadow-md rounded-xl">
+            <div class="flex justify-between items-center">
+              <div class="bg-[#DFEFFF] p-1 rounded-xl">
+                <img src="assets/police.png" alt="" class="w-12" />
+              </div>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <h2 class="text-[22px] font-bold mt-2">নারী ও শিশু সহায়তা</h2>
+            <p class="text-[18px] text-gray-500">Women & Child Helpline</p>
+            <h3 class="text-[22px] font-bold mt-1">109</h3>
+            <div class="bg-gray-200 py-1 px-3 rounded-full w-[80px]">
+              <p class="text-[16px] text-gray-500">সহায়তা</p>
+            </div>
+            <div class="flex items-center gap-2 mt-2">
+              <button
+                class="border-[2px] border-gray-200 w-[150px] py-1 rounded-xl">
+                <i class="fa-solid fa-copy mr-2"></i>Copy
+              </button>
+              <button class="bg-[#00A63E] w-[150px] py-1 rounded-xl text-white">
+                <i class="fa-solid fa-phone mr-2"></i>Call
+              </button>
+            </div>
+          </div>
+<!-- cart 5 End -->
+          <div class="cart bg-white p-5 shadow-md rounded-xl">
+            <div class="flex justify-between items-center">
+              <div class="bg-[#FFE3E2] p-3 rounded-xl">
+                <img src="assets/fire-service.png" alt="" class="w-8" />
+              </div>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <h2 class="text-[22px] font-bold mt-2">দুদক</h2>
+            <p class="text-[18px] text-gray-500">Anti-Corruption</p>
+            <h3 class="text-[22px] font-bold mt-1">106</h3>
+            <div class="bg-gray-200 py-1 px-3 rounded-full w-[80px]">
+              <p class="text-[16px] text-gray-500 mx-auto">সরকারি</p>
+            </div>
+            <div class="flex items-center gap-2 mt-2">
+              <button
+                class="border-[2px] border-gray-200 w-[150px] py-1 rounded-xl">
+                <i class="fa-solid fa-copy mr-2"></i>Copy
+              </button>
+              <button class="bg-[#00A63E] w-[150px] py-1 rounded-xl text-white">
+                <i class="fa-solid fa-phone mr-2"></i>Call
+              </button>
+            </div>
+          </div>
+          <!-- cart 5 End -->
+        </section>
+        <!--======================== cart part End ========================-->
+        <aside class="bg-blue-200 col-span-3">
+
+        </aside>
+      </section>
+    </main>
+  </body>
 </html>
